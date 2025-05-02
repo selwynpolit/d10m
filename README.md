@@ -1,0 +1,5 @@
+# d10m
+Drupal 10 multi-site setup with DDEV
+
+This uses a shared database with prefixes.
+

@@ -1,0 +1,9 @@
+subsite1:
+  root: /var/www/html/web
+  uri: https://subsite1.ddev.site
+subsite2:
+  root: /var/www/html/web
+  uri: https://subsite2.ddev.site
+subsite3:
+  root: /var/www/html/web
+  uri: https://subsite3.ddev.site
