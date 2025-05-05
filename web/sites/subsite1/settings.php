@@ -883,13 +883,8 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 //// Automatically generated include for settings managed by ddev.
 if (file_exists($app_root  . '/sites/default/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 'true') {
   include $app_root . '/sites/default/settings.ddev.php';
-//  $base_url = 'https://subsite1.ddev.site';
 }
 $databases['default']['default']['prefix'] = 'subsite1_';
-
-
-
-
 
 
 /**

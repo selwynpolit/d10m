@@ -4,7 +4,10 @@ docroot: web
 php_version: "8.3"
 webserver_type: nginx-fpm
 xdebug_enabled: false
-additional_hostnames: []
+additional_hostnames:
+  - subsite1
+  - subsite2
+  - subsite3
 additional_fqdns: []
 database:
     type: mariadb
@@ -13,6 +16,12 @@ use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
 corepack_enable: false
+upload_dirs:
+  - sites/default/files
+  - sites/subsite1/files
+  - sites/subsite2/files
+  - sites/subsite3/files
+
 
 # Key features of DDEV's config.yaml:
 
@@ -58,7 +67,7 @@ corepack_enable: false
 
 # host_xhgui_port: 8142
 # Can be used to change the host binding port of the xhgui
-# application. Rarely used; only when port conflict and 
+# application. Rarely used; only when port conflict and
 # bind_all_ports is used (normally with router disabled)
 
 # xhprof_enabled: false  # Set to true to enable Xhprof and "ddev start" or "ddev restart"
